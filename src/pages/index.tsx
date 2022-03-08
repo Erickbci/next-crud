@@ -1,3 +1,4 @@
+import BotaoNovoCliente from "../components/BotaoNovoCliente";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -25,6 +26,9 @@ export default function Home() {
       text-white
     `}>
       <Layout titulo="Cadastro Simples">
+        <div className="flex justify-end">
+          <BotaoNovoCliente cor="blue" className="mb-4">Novo Cliente</BotaoNovoCliente>
+        </div>
         <Tabela 
         clienteSelecionado={clienteSelecionado}
         clienteExcluido={clienteExcluido}
